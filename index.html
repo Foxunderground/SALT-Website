@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Roboto:wght@100&display=swap"
+		rel="stylesheet">
+
+	<script type="text/javascript" src="https://livejs.com/live.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<script>
+		// When the user scrolls down 50px from the top of the document, resize the header's font size
+		window.onscroll = () => {
+			if (document.documentElement.scrollTop < 300) {
+				document.getElementById("nav").style = "";
+			} else {
+				document.getElementById("nav").style = "background-color: rgb(120, 77, 28, 0.95);";
+			}
+
+
+		};
+
+		function isInViewport(element) {
+			const rect = element.getBoundingClientRect();
+			return (
+				rect.top >= 0 &&
+				rect.left >= 0 &&
+				rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+				rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+			);
+		}
+
+
+
+	</script>
+</head>
+
+<body>
+	<!--NAVBAR-->
+	<nav id="nav" style="">
+		<img src="Immages/Logo.png">
+		<div class="navbarlinks">
+			<a href="#">Home</a>
+			<a href="#">Management</a>
+			<a href="#">Past Activities</a>
+			<a href="#">Donations</a>
+			<!--<a href="#">Documentation</a>-->
+		</div>
+	</nav>
+
+	<!--MAIN PAGE-->
+	<div class="mainpage">
+		<div class="mainpageoverlay"></div>
+		<div class="maintoptext">Soan Air Land Technologies</div>
+		<div class="maintext">SALT</div>
+	</div>
+
+	<!--ABOUT US-->
+	<div class="fadee aboutus">
+		<div class="aboutustext">
+			<div class="aboutustextheading">About Us</div>
+			<div class="aboutustextbody">We are an organization focused on aiding the community, by fullfilling their
+				needs to the best of our abilities.</div>
+		</div>
+		<div class="aboutusimmage"></div>
+	</div>
+
+	<!--DONATE TO US-->
+	<div class="donate">
+		<div>
+			<button class="button-donate">Join Us</button>
+		</div>
+	</div>
+
+	<!--Management-->
+	<div class="management">
+		Our Team
+		
+		<div class="profile">
+			<div class="box">
+				<img class="profileimmage" src="./Immages/Tufail.jpeg">
+				<!--
+				<div class="profiletext">
+					<h1>Major Tufial</h1>
+				</div>
+				-->
+			</div>
+
+			<div class="description" width=45vw>
+				<div class="profiletext">
+					<h1>Major Tufial</h1>
+				</div>
+
+				<div class="subtext">
+					<h2>CEO, and founder of the company, Major Tufail, is the brains of the organization
+						CEO, and founder of the company, Major Tufail, is the brains of the organization
+						CEO, and founder of the company, Major Tufail, is the brains of the organization
+						CEO, and founder of the company, Major Tufail, is the brains of the organization
+						CEO, and founder of the company, Major Tufail, is the brains of the organization
+						CEO, and founder of the company, Major Tufail, is the brains of the organization
+						CEO, and founder of the company, Major Tufail, is the brains of the organization
+						CEO, and founder of the company, Major Tufail, is the brains of the organization
+						CEO, and founder of the company, Major Tufail, is the brains of the organization
+						CEO, and founder of the company, Major Tufail, is the brains of the organization
+						CEO, and founder of the company, Major Tufail, is the brains of the organization
+						CEO, and founder of the company, Major Tufail, is the brains of the organizationCEO, and founder of the company, Major Tufail, is the brains of the organizationCEO, and founder of the company, Major Tufail, is the brains of the organization
+					</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<h1 class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sit architecto corporis error cumque
+		commodi ex, eos incidunt ducimus voluptates non deserunt illum fuga labore ullam sint minus quis dicta?</h1>
+	<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sit architecto corporis error cumque commodi ex,
+		eos incidunt ducimus voluptates non deserunt illum fuga labore ullam sint minus quis dicta?</h1>
+	<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sit architecto corporis error cumque commodi ex,
+		eos incidunt ducimus voluptates non deserunt illum fuga labore ullam sint minus quis dicta?</h1>
+	<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sit architecto corporis error cumque commodi ex,
+		eos incidunt ducimus voluptates non deserunt illum fuga labore ullam sint minus quis dicta?</h1>
+
+
+	<!--Map-->
+	<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.0253789859617!2d73.10963531520134!3d33.52672578075213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfe7094412658721b!2zMzPCsDMxJzM2LjIiTiA3M8KwMDYnNDIuNiJF!5e0!3m2!1sen!2s!4v1655663957197!5m2!1sen!2s" width=100% height=100% style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+
+	<!--FOOTER-->
+	<div class="footer">
+		org@mail.com
+	</div>
+
+</body>
+
+</html>

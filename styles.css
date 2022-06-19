@@ -1,0 +1,390 @@
+/* MISC */
+
+html body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.spacer {
+  height: 5vh;
+}
+
+.fadee {
+}
+
+@keyframes topdownfadeanim {
+  0% {
+    color: #00000000;
+  }
+  100% {
+    color: initial;
+  }
+}
+
+.to-fade-in {
+  opacity: 0;
+}
+.to-fade-in.fade-in {
+  -webkit-animation: fade-in 3s forwards;
+  animation: fade-in 3s forwards;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* NAVBAR */
+
+nav {
+  position: fixed;
+  z-index: 1;
+  padding: 1vmin 1vmin 1vmin 1vmin;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.4s ease-in-out;
+}
+
+nav a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 2vmin;
+  color: white;
+
+  padding: 3vh 0vh 3vh 0vh;
+  padding-right: 1.5vw;
+  padding-left: 1.5vw;
+
+  border-bottom: 2px transparent solid;
+  transition: 0.5s;
+}
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 0.7vh #D3A630 solid;
+}
+
+nav img {
+  height: 7vh;
+  float: left;
+}
+
+.navbarlinks {
+  float: right;
+  margin-right: 4vw;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MAIN PAGE */
+
+.mainpage {
+  background-image: url("Immages/headimg.jpg");
+  position: relative;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  /*filter: blur(4px);*/
+  background-attachment: fixed;
+}
+
+.mainpageoverlay {
+  background: #01011896;
+  height: 100vh;
+}
+
+.maintext {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 10vmin;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.maintoptext {
+  color: #CC8430;
+  font-weight: bold;
+  font-size: 4vmin;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ABOUT US */
+
+.aboutus {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50vh, 1fr));
+  grid-row: auto;
+}
+
+.aboutustext {
+  position: relative;
+  top: 15%;
+  padding: 5vmin;
+  padding-left: 10vmin;
+}
+
+.aboutustextheading {
+  text-align: left;
+  font-size: 5vmin;
+  /*    animation: topdownfadeanim 3s; */
+}
+
+.aboutustextbody {
+  text-align: justify;
+  margin-top: 3vmin;
+  font-size: 3vmin;
+}
+
+.aboutusimmage {
+  background-image: url("Immages/headimg.jpg");
+  height: 60vh;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+/*Donate*/
+
+.donate{
+  background-image: url("Immages/donations.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  object-fit: contain;
+  height: 50vh;
+}
+
+.donatebk{
+  height: 50vh;
+  width: 80vw;
+  background-color: rgba(0, 0, 0, 0.507);
+  border: 3px solid rgba(0, 0, 0, 0.582);
+  border-radius: 23px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.button-donate {
+  background-color: #00000091; /* Green */
+  border: 1.5px solid #CC8430;
+  color: rgb(255, 255, 255);
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width:30vw;
+  min-height: 5vh;
+  font-size: 3vmin;
+  border-radius: 20px;
+}
+
+.button-donate:hover {
+  background-color: #CC8430;
+  color: rgb(255, 255, 255);
+}
+
+
+/*Profile Immages*/
+.management{
+  font-size: 6vmin;
+  color: white;
+  padding-top: 3vh;
+
+  background-image: url("Immages/Management\ bk.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.box {
+  margin: 40px;
+  max-width: 45%;
+  padding: 10px;
+  border: #9091C3 2px solid;
+  border-radius: 2%;
+}
+
+.description {
+  margin: 40px;
+  max-width: 60%;
+  padding: 10px;
+  border: #9091C3 2px solid;
+  border-radius: 2%;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  object-fit: contain;
+}
+
+.profileimmage {
+  width: 25vw;
+
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  border-bottom-width: 40px;
+
+  border: #39394c 2px solid;
+}
+
+.profiletext {
+  text-decoration: none;
+  text-align: center;
+  font-size: 2vmin;
+  color: #ebf0f9;
+}
+
+.subtext {
+  text-decoration: none;
+  text-align: center;
+  font-size: 2vmin;
+  color: #ebf0f9;
+}
+
+/*Map*/
+.map{
+  height: 50vh;
+  width: 100%;
+}
+
+/*Footer*/
+
+.footer {
+  background-color: rgb(25, 25, 25);
+  color: white;
+  height: 6vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1105px) {
+  .button-donate {
+    font-size: 6vmin;
+  }
+
+  .donate{
+    height: 80vh;
+  }
+
+  nav a {
+    font-size: 3vmin;
+  }
+
+  .profile {
+    flex-direction: column;
+  }
+
+  .aboutustext {
+    position: relative;
+    top: 7.5%;
+    padding: 5vmin;
+    padding-left: 5vmin;
+    padding-right: 5vmin;
+    margin-bottom: 2vmin;
+  }
+  
+  .box{
+    max-width: 95%;
+  }
+
+  .profileimmage {
+    width: 60vw;
+  }
+  
+  .button-donate {
+
+    width:70vw;
+
+  }
+  
+  .maintext {
+    font-size: 22vmin;
+  }
+  
+  .maintoptext {
+    top: 70%;
+    font-size: 6vmin;
+  }
+
+  .profiletext {
+    font-size: 3vmin;
+  }
+
+  .management{
+    font-size: 14vmin;
+  }
+
+  .aboutustextheading {
+
+    font-size: 8vmin;
+
+  }
+  
+  .aboutustextbody {
+    font-size: 5vmin;
+  }
+}
