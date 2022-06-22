@@ -102,9 +102,9 @@ nav img {
 /* MAIN PAGE */
 
 .mainpage {
-  background-image: url("Immages/headimg.jpg");
+  background-image: url("Immages/contactUs.jfif");
   position: relative;
-  height: 100vh;
+  height: 40vh;
   background-position: center;
   background-size: cover;
   /*filter: blur(4px);*/
@@ -115,7 +115,7 @@ nav img {
   background: #01011896;
   background: #5148285e;
   background: #aa9e604f;
-  height: 100vh;
+  height: 40vh;
 }
 
 .maintext {

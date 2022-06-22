@@ -8,9 +8,13 @@ app.use(express.static(__dirname + "/public"));
 //app.set("views", path.join(__dirname, "views"));
 
 router.get("/", (req, res) => {
-  res.render("index");
-});
+	res.render("index");
+  });
 
+router.get("/contactus", (req, res) => {
+	res.render("contactus");
+});
+	
 app.use("/", router);
 
 let port = process.env.PORT || 8081;
