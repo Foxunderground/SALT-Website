@@ -102,7 +102,7 @@ nav img {
 /* MAIN PAGE */
 
 .mainpage {
-  background-image: url("Immages/contactUs.jfif");
+  background-image: url("Immages/contactUs.png");
   position: relative;
   height: 40vh;
   background-position: center;
@@ -114,7 +114,7 @@ nav img {
 .mainpageoverlay {
   background: #01011896;
   background: #5148285e;
-  background: #aa9e604f;
+  background: #0101188c;
   height: 40vh;
 }
 
@@ -257,7 +257,7 @@ nav img {
 
 .box {
   margin: 40px;
-  max-width: 45%;
+  max-width: 50%;
   padding: 10px;
   border: #9091C3 2px solid;
   border-radius: 2%;

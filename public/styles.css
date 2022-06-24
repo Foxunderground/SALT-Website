@@ -15,6 +15,8 @@ html body {
 
 .spacer {
   height: 5vh;
+  width: 100%;
+  background-color: white;
 }
 
 .fadee {
@@ -82,7 +84,7 @@ nav a {
 
 nav a:hover {
   background-color: rgba(0, 0, 0, 0);
-  border-bottom: 0.7vh #D3A630 solid;
+  border-bottom: 0.7vh #d3a630 solid;
 }
 
 nav img {
@@ -132,7 +134,7 @@ nav img {
 }
 
 .maintoptext {
-  color: #CC8430;
+  color: #cc8430;
   font-weight: bold;
   font-size: 4vmin;
   position: absolute;
@@ -183,7 +185,7 @@ nav img {
 
 /*Donate*/
 
-.donate{
+.donate {
   background-image: url("Immages/donations.jpg");
   background-position: center;
   background-size: cover;
@@ -199,7 +201,7 @@ nav img {
   height: 50vh;
 }
 
-.donatebk{
+.donatebk {
   height: 50vh;
   width: 80vw;
   background-color: rgba(0, 0, 0, 0.507);
@@ -215,7 +217,7 @@ nav img {
 
 .button-donate {
   background-color: #00000091; /* Green */
-  border: 1.5px solid #CC8430;
+  border: 1.5px solid #cc8430;
   color: rgb(255, 255, 255);
   padding: 16px 32px;
   text-align: center;
@@ -225,20 +227,19 @@ nav img {
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
-  width:30vw;
+  width: 30vw;
   min-height: 5vh;
   font-size: 3vmin;
   border-radius: 20px;
 }
 
 .button-donate:hover {
-  background-color: #CC8430;
+  background-color: #cc8430;
   color: rgb(255, 255, 255);
 }
 
-
 /*Profile Immages*/
-.management{
+.management {
   font-size: 6vmin;
   color: white;
   padding-top: 3vh;
@@ -257,9 +258,9 @@ nav img {
 
 .box {
   margin: 40px;
-  max-width: 45%;
+  max-width: 50%;
   padding: 10px;
-  border: #9091C3 2px solid;
+  border: #9091c3 2px solid;
   border-radius: 2%;
 }
 
@@ -267,7 +268,7 @@ nav img {
   margin: 40px;
   max-width: 60%;
   padding: 10px;
-  border: #9091C3 2px solid;
+  border: #9091c3 2px solid;
   border-radius: 2%;
 }
 
@@ -308,10 +309,55 @@ nav img {
 }
 
 /*Map*/
-.map{
+.map {
   height: 50vh;
   width: 100%;
 }
+
+/*Text Boxes*/
+.boxes {
+  font-size: 6vmin;
+  color: white;
+  padding-top: 3vh;
+
+  background-image: url("Immages/services.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.textbox {
+  margin: 40px;
+  max-width: 25%;
+  padding: 10px;
+  border: #9091c3 2px solid;
+  border-radius: 2%;
+  background-color: #9da8a957;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.textbox:hover {
+  transform: scale(1.2,1.2);
+  margin: 40px;
+  max-width: 25%;
+  padding: 10px;
+  border: #9091c3 2px solid;
+  border-radius: 2%;
+  background-color: #9da8a97e;
+  
+}
+
+/*
+* {
+  outline: 1px solid #f00 !important;
+}
+*/
 
 /*Footer*/
 
@@ -330,7 +376,7 @@ nav img {
     font-size: 6vmin;
   }
 
-  .donate{
+  .donate {
     height: 80vh;
   }
 
@@ -352,25 +398,27 @@ nav img {
     margin-left: 2vmin;
     padding-bottom: 15vmin;
   }
-  
-  .box{
+
+  .box {
+    max-width: 95%;
+  }
+
+  .textbox {
     max-width: 95%;
   }
 
   .profileimmage {
     width: 60vw;
   }
-  
+
   .button-donate {
-
-    width:70vw;
-
+    width: 70vw;
   }
-  
+
   .maintext {
     font-size: 22vmin;
   }
-  
+
   .maintoptext {
     top: 70%;
     font-size: 6vmin;
@@ -380,17 +428,19 @@ nav img {
     font-size: 3vmin;
   }
 
-  .management{
+  .management {
     font-size: 14vmin;
   }
 
   .aboutustextheading {
-
     font-size: 7vmin;
-
   }
-  
+
   .aboutustextbody {
     font-size: 4vmin;
+  }
+
+  .textbox:hover {
+    transform: scale(1,1);
   }
 }
