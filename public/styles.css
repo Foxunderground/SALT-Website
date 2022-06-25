@@ -79,7 +79,7 @@ nav a {
   padding-left: 1.5vw;
 
   border-bottom: 2px transparent solid;
-  transition: 0.5s;
+  transition: 0.25s;
 }
 
 nav a:hover {
@@ -236,6 +236,7 @@ nav img {
 .button-donate:hover {
   background-color: #cc8430;
   color: rgb(255, 255, 255);
+  transform: scale(1.2,1.2);
 }
 
 /*Profile Immages*/
@@ -347,10 +348,9 @@ nav img {
   margin: 40px;
   max-width: 25%;
   padding: 10px;
-  border: #9091c3 2px solid;
+  border: #9091c3 5px solid;
   border-radius: 2%;
-  background-color: #9da8a97e;
-  
+  background-color: #9da8a97e; 
 }
 
 /*
