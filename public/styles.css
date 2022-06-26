@@ -183,6 +183,63 @@ nav img {
   background-size: cover;
 }
 
+/*LOGOS*/
+.aboutusimmagecontainer {
+  position: relative;
+
+  background-image: url("Immages/services.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.aboutusimmages {
+  margin: 40px;
+  padding: 10px;
+  border: #9091c3 2px solid;
+  border-radius: 2%;
+  background-color: #9da8a957;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.aboutusimmages:hover {
+  transform: scale(1.2, 1.2);
+  margin: 40px;
+  background-color: #9da8a97e;
+}
+
+.aboutusimmages img {
+  width: 15vw;
+}
+
+.logotext {
+  position: relative;
+  top: 9%;
+  padding: 5vmin;
+  padding-left: 10vmin;
+  padding-bottom: 10vmin;
+}
+
+.logotextheading {
+  text-align: left;
+  font-size: 5vmin;
+  /*    animation: topdownfadeanim 3s; */
+  text-align: right;
+}
+
+.logotextbody {
+  text-align: justify;
+  margin-top: 3vmin;
+  font-size: 3vmin;
+  text-align: right;
+  line-height: 3ch;
+}
 /*Donate*/
 
 .donate {
@@ -236,7 +293,7 @@ nav img {
 .button-donate:hover {
   background-color: #cc8430;
   color: rgb(255, 255, 255);
-  transform: scale(1.2,1.2);
+  transform: scale(1.2, 1.2);
 }
 
 /*Profile Immages*/
@@ -344,13 +401,13 @@ nav img {
 }
 
 .textbox:hover {
-  transform: scale(1.2,1.2);
+  transform: scale(1.2, 1.2);
   margin: 40px;
   max-width: 25%;
   padding: 10px;
   border: #9091c3 5px solid;
   border-radius: 2%;
-  background-color: #9da8a97e; 
+  background-color: #9da8a97e;
 }
 
 /*
@@ -440,7 +497,28 @@ nav img {
     font-size: 4vmin;
   }
 
-  .textbox:hover {
-    transform: scale(1,1);
+  .textbox {
+    transition: 100000s; /*I have literally no idea on how to stop the animation so ill just make it longer*/
+  }
+
+  .aboutusimmages {
+    transition: 100000s; /*I have literally no idea on how to stop the animation so ill just make it longer*/
+  }
+
+  .aboutusimmages img {
+    width: 75vw;
+  }
+
+  .logotextheading {
+    text-align: center;
+  }
+
+  .logotextbody {
+    text-align: center;
+  }
+
+  .logotext {
+    padding-left: 5vmin;
+    padding-bottom: 15vmin;
   }
 }
