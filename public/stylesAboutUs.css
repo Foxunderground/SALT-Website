@@ -281,7 +281,7 @@ nav img {
 }
 
 .profileimmage {
-  width: 25vw;
+  width: 15vw;
 
   position: relative;
   background-repeat: no-repeat;
@@ -309,7 +309,7 @@ nav img {
 
 /*Map*/
 .map {
-  height: 50vh;
+  height: 70vh;
   width: 100%;
 }
 
@@ -349,7 +349,7 @@ nav img {
     padding-left: 10vmin;
     padding-right: 5vmin;
     margin-bottom: 2vmin;
-    margin-left: 2vmin;
+    margin-left: 5vmin;
     padding-bottom: 15vmin;
   }
 

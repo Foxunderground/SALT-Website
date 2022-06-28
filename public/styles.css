@@ -398,6 +398,7 @@ nav img {
   border-radius: 2%;
   background-color: #9da8a957;
   transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  min-width: 24vw;
 }
 
 .textbox:hover {
@@ -410,6 +411,26 @@ nav img {
   background-color: #9da8a97e;
 }
 
+.textbox:after {
+  content: "»";
+  position: absolute;
+  bottom: -8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+
+  opacity: 0;
+  transition: 0.35s cubic-bezier(1, 0, 0, 1);
+}
+.textbox:hover::after {
+  bottom: -11%;
+  opacity: 1;
+}
+
+.textboxselected {
+  transform: scale(1.8, 1.8) !important;
+}
 /*
 * {
   outline: 1px solid #f00 !important;
@@ -461,6 +482,7 @@ nav img {
   }
 
   .textbox {
+    min-width: 80%;
     max-width: 95%;
   }
 
