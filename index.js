@@ -14,7 +14,33 @@ router.get("/", (req, res) => {
 router.get("/contactus", (req, res) => {
 	res.render("contactus");
 });
-	
+
+
+
+router.get("/aviation", (req, res) => {
+	res.render("aviation");
+});
+
+router.get("/space", (req, res) => {
+	res.render("space");
+});
+
+router.get("/defense", (req, res) => {
+	res.render("defense");
+});
+
+router.get("/communication", (req, res) => {
+	res.render("communication");
+});
+
+router.get("/materials", (req, res) => {
+	res.render("materials");
+});
+
+router.get("/universities", (req, res) => {
+	res.render("universities");
+});
+
 app.use("/", router);
 
 let port = process.env.PORT || 8081;
