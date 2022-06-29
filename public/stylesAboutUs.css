@@ -313,6 +313,68 @@ nav img {
   width: 100%;
 }
 
+/*Text Boxes*/
+.boxes {
+  font-size: 6vmin;
+  color: white;
+  padding-top: 3vh;
+
+  background-image: url("Immages/services.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.textbox {
+  margin: 40px;
+  max-width: 25%;
+  padding: 10px;
+  border: #9091c3 2px solid;
+  border-radius: 2%;
+  background-color: #9da8a957;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  min-width: 24vw;
+}
+
+.textbox:hover {
+  transform: scale(1.2, 1.2);
+  margin: 40px;
+  max-width: 25%;
+  padding: 10px;
+  border: #9091c3 5px solid;
+  border-radius: 2%;
+  background-color: #9da8a97e;
+}
+
+/*
+.textbox:after {
+  content: "»";
+  position: absolute;
+  bottom: -8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+
+  opacity: 0;
+  transition: 0.35s cubic-bezier(1, 0, 0, 1);
+}
+.textbox:hover::after {
+  bottom: -11%;
+  opacity: 1;
+}
+
+.textboxselected {
+  transform: scale(1.8, 1.8) !important;
+}
+*/
+
 /*Footer*/
 
 .footer {
@@ -357,6 +419,11 @@ nav img {
     max-width: 95%;
   }
 
+  .textbox {
+    min-width: 80%;
+    max-width: 95%;
+  }
+
   .profileimmage {
     width: 60vw;
   }
@@ -366,7 +433,7 @@ nav img {
   }
 
   .maintext {
-    font-size: 22vmin;
+    font-size: 13vmin;
   }
 
   .maintoptext {
