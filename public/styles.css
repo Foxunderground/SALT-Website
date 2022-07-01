@@ -88,7 +88,7 @@ nav a:hover {
 }
 
 nav img {
-  height: 15vh;
+  height: 20vh;
   float: left;
   transition: 0.25s;
 }
@@ -177,7 +177,7 @@ nav img {
 }
 
 .aboutusimmage {
-  background-image: url("Immages/headimg.jpg");
+  background-image: url("Immages/headimg1.jpg");
   min-height: 60vh;
   position: relative;
   background-position: center;
@@ -457,6 +457,12 @@ nav img {
 
   .donate {
     height: 80vh;
+  }
+
+  nav img {
+    height: 15vh;
+    float: left;
+    transition: 0.25s;
   }
 
   nav a {
