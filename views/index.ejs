@@ -13,23 +13,51 @@
 	<link rel="stylesheet" href="styles.css">
 	<script src="navscript.js">
 	</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			// Add smooth scrolling to all links
+			$("a").on('click', function (event) {
+
+				// Make sure this.hash has a value before overriding default behavior
+				if (this.hash !== "") {
+					// Prevent default anchor click behavior
+					event.preventDefault();
+
+					// Store hash
+					var hash = this.hash;
+
+					// Using jQuery's animate() method to add smooth page scroll
+					// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function () {
+
+						// Add hash (#) to URL when done scrolling (default click behavior)
+						window.location.hash = hash;
+					});
+				} // End if
+			});
+		});
+	</script>
 </head>
 
 <body>
 	<!--NAVBAR-->
 	<nav id="nav" style="">
-		<img id="logo" src="Immages/Logo.png">
+		<img id="logo" class="logo" src="Immages/Logo.png">
 		<div class="navbarlinks">
-			<a href="/">Home</a>
+			<a href="#home">Home</a>
 			<a href="/contactus">Contact Us</a>
-			<a href="#">Clients</a>
-			<a href="#">Donations</a>
+			<a href="#clients">Clients</a>
+			<a href="mailto: info@soanairland.com"> <img class=" emaillogo" src="Immages/emailicon.png"></a>
 			<!--<a href="#">Documentation</a>-->
 		</div>
 	</nav>
 
 	<!--MAIN PAGE-->
-	<div class="mainpage">
+	<div class="mainpage" id="home">
 		<div class="mainpageoverlay"></div>
 		<!--
 		<div class="maintoptext">Soan Air Land Technologies</div>
@@ -164,7 +192,7 @@
 	</div>
 
 	<!--Logo-->
-	<div class="fadee aboutus">
+	<div class="fadee aboutus" id="clients">
 		<div class="logotext">
 			<div class="logotextheading">Our Clients</div>
 			<div class="logotextbody">Soan Air Land Technologies (SALT) has collaborated
@@ -174,21 +202,21 @@
 		</div>
 		<div class="aboutusimmagecontainer" style="background-image: url('Immages/LogosBk.png');">
 			<div class="aboutusimmages">
-				<img src="/Immages/Logos/ACES.png">
+				<img src="/Immages/ACES.png">
 			</div>
 
 			<div class="aboutusimmages">
-				<img src="/Immages/Logos/Areoworld.png">
-
-			</div>
-
-			<div class="aboutusimmages">
-				<img src="/Immages/Logos/Gov of Punjab.png">
+				<img src="/Immages/Areoworld.png">
 
 			</div>
 
 			<div class="aboutusimmages">
-				<img src="/Immages/Logos/suparco_logo.png">
+				<img src="/Immages/Gov of Punjab.png">
+
+			</div>
+
+			<div class="aboutusimmages">
+				<img src="/Immages/suparco_logo.png">
 
 			</div>
 		</div>

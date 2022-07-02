@@ -82,12 +82,17 @@ nav a {
 
 nav a:hover {
   background-color: rgba(0, 0, 0, 0);
-  border-bottom: 0.7vh #d3a630 solid;
+  border-bottom: 0.7vh #ffffffab solid;
 }
 
-nav img {
-  height: 7vh;
+.logo {
+  height: 20vh;
   float: left;
+  transition: 0.25s;
+}
+
+.emaillogo {
+  height: 2vh;
 }
 
 .navbarlinks {
@@ -398,6 +403,10 @@ nav img {
 
   nav a {
     font-size: 3vmin;
+  }
+
+  .logo {
+    height: 7vh;
   }
 
   .profile {
