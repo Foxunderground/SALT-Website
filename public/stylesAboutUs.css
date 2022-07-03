@@ -424,11 +424,16 @@ nav a:hover {
     padding-bottom: 15vmin;
   }
 
+  .boxes {
+    font-size: 10vmin;
+  }
+
   .box {
     max-width: 95%;
   }
 
   .textbox {
+    transition: 100000s; /*I have literally no idea on how to stop the animation so ill just make it longer*/
     min-width: 80%;
     max-width: 95%;
   }
@@ -451,7 +456,7 @@ nav a:hover {
   }
 
   .profiletext {
-    font-size: 3vmin;
+    font-size: 4vmin;
   }
 
   .management {
@@ -459,11 +464,11 @@ nav a:hover {
   }
 
   .aboutustextheading {
-    font-size: 7vmin;
+    font-size: 9vmin;
   }
 
   .aboutustextbody {
-    font-size: 4vmin;
+    font-size: 6vmin;
   }
 
   .subtext {
