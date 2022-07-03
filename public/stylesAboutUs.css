@@ -107,7 +107,7 @@ nav a:hover {
 /* MAIN PAGE */
 
 .mainpage {
-  background-image: url("Immages/contactUs.png");
+  background-image: url("Immages/contactUs.webp");
   position: relative;
   height: 40vh;
   background-position: center;
@@ -179,7 +179,7 @@ nav a:hover {
 }
 
 .aboutusimmage {
-  background-image: url("Immages/headimg.jpg");
+  background-image: url("Immages/headimg.webp");
   min-height: 60vh;
   position: relative;
   background-position: center;
@@ -189,7 +189,7 @@ nav a:hover {
 /*Donate*/
 
 .donate {
-  background-image: url("Immages/donations.jpg");
+  background-image: url("Immages/donations.webp");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -247,7 +247,7 @@ nav a:hover {
   color: white;
   padding-top: 3vh;
 
-  background-image: url("Immages/Management\ bk.jpg");
+  background-image: url("Immages/Management\ bk.webp");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -324,7 +324,7 @@ nav a:hover {
   color: white;
   padding-top: 3vh;
 
-  background-image: url("Immages/services.png");
+  background-image: url("Immages/services.webp");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
